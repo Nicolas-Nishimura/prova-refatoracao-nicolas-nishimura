@@ -46,6 +46,7 @@ public class Veiculo {
 		return placa;
 	}
 
+	// Define a placa
 	public void setPlaca(String placa) {
 		if (placa == null || placa.isEmpty()) {
 			System.out.println("Erro: placa invalida.");
