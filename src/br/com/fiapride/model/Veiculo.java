@@ -2,7 +2,7 @@ package br.com.fiapride.model;
 
 public class Veiculo {
 
-	// private = ninguem mexe direto de fora (encapsulamento)
+	// Atributos privados
 	private String nomeDoDono;
 	private String placa;
 	private double combustivel;
@@ -27,10 +27,12 @@ public class Veiculo {
 		}
 	}
 
+	// Retorna o nome do dono
 	public String getNomeDoDono() {
 		return nomeDoDono;
 	}
 
+	// Define o nome do dono
 	public void setNomeDoDono(String nomeDoDono) {
 		if (nomeDoDono == null || nomeDoDono.isEmpty()) {
 			System.out.println("Erro: nome invalido.");
@@ -38,7 +40,8 @@ public class Veiculo {
 			this.nomeDoDono = nomeDoDono;
 		}
 	}
-
+	
+	// Retorna a placa
 	public String getPlaca() {
 		return placa;
 	}
